@@ -6,10 +6,10 @@ const parent= React.createElement("div",{id:"parent"},React.createElement("div",
 React.createElement("h1",{},"This is Child h1")))
 // Specify Root element where we need to add content
 
-const sibling= React.createElement("div",{},[
-    React.createElement("h1",{},"HEllo h1"),
-    React.createElement("h2",{},"HEllo h2")
-])
+const sibling = React.createElement("div", {}, [
+  React.createElement("h1", {}, "HEllo h1"),
+  React.createElement("h2", {}, "HEllo h2"),
+]);
 
 const root=ReactDOM.createRoot(document.getElementById("root"))
-root.render(parent)
+root.render(parent);

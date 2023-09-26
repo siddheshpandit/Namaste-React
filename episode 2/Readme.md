@@ -27,9 +27,11 @@ It contains the dependency modules and all the transitive modules required by ou
 npx is used to execute a package.
 example: npx parcel index.html
 
+# npm vs npx
+npm is for installing a package, while npx is used for executing a installed package.
 # What is parcel?
-- Dev Build
-- Server
+- Creates a Dev Build
+- Create a local Server
 - HMR - Hot module Replacement (Builds and Reads files changes and reloades)
 - Uses file waching algorithm written in c++.
 - Faster Builds because of caching
