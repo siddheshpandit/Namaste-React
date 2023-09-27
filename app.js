@@ -1,15 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-const heading = React.createElement("h1",{id:"heading"},"Hello From React")
 
-const parent= React.createElement("div",{id:"parent"},React.createElement("div",{id:"child"},
-React.createElement("h1",{},"This is Child h1")))
-// Specify Root element where we need to add content
+// Jsx Element
+const jsxElement = (<h1 className="heading">Namaste React</h1>)
+console.log(jsxElement);
 
-const sibling = React.createElement("div", {}, [
-  React.createElement("h1", {}, "HEllo h1"),
-  React.createElement("h2", {}, "HEllo h2"),
-]);
+// React Element
+// const heading = React.createElement("h1",{id:"heading"},"Namaste React")
+console.log(React.createElement("h1",{},"Hello World"));
+// React Component
+const Title=()=>(
+    <h1>Title Component</h1>
+)
+console.log(Title);
+function Heading(){
+    return (
+    <h3>World</h3>)
+}
 
-const root=ReactDOM.createRoot(document.getElementById("root"))
-root.render(parent);
+const HeadingComponent=()=>(
+    <div>
+        {Title()}
+        <Title/>
+        <h1>Hello</h1>
+        <Heading/>
+    </div>
+)
+// console.log(HeadingComponent);
+const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(<HeadingComponent/>)
