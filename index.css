@@ -85,6 +85,12 @@
     height:350px;
     width: 100%;
 }
+.filter-btn{
+    cursor: pointer;
+    /* color: aliceblu; */
+    background-color: rgb(208, 214, 220);
+    border-radius: 10px;
+}
 .res-container{
     display: flex;
     flex-direction: column;
